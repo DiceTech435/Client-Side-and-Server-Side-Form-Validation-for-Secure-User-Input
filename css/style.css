@@ -1,0 +1,133 @@
+/* Register */
+form{
+width: 400px;
+border:1px solid #bbb;
+border-radius: 10px;
+padding: 20px;
+margin: auto;
+margin-top: 50px;
+}
+input{
+width: 100%;
+border:1px solid #bbb;
+border-radius: 10px;
+padding: 20px;
+outline: none;
+}
+.btn{
+width: 100%;
+border:none;
+border-radius: 10px;
+padding: 20px;
+background: #265bc8;
+transition: 0.3s;
+color:#fff;
+}
+
+.btn:hover{
+background: #1f3f7f;
+transition: 0.3s;  
+cursor:pointer;
+}
+
+/* Dashboard */
+h2{
+text-align: center;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: rgba(163, 208, 247, 0.63);
+margin-top: 30px;
+}
+
+.table{
+margin: auto;
+outline: none;
+cursor: pointer;
+}
+
+
+
+/* COPY ERROR HERE */
+/* Error */
+.error{
+    background: #fdeaea;
+    color: #a10d0d;
+    border-left: 6px solid #e74c3c;
+    padding:15px 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    align-items: center;
+    gap: 10px;
+    animation: slideIn 0.4s ease;
+}
+
+.error .icon{
+    font-size: 20px;
+    line-height: 1;
+}
+
+.closeError{
+    float: right;
+    color: #a10d0d;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: -2px;
+}
+
+/* Success */
+.success{
+    background: #e9f9ee;
+    color: #0b7a37;
+    border-left: 6px solid #2ecc71;
+    padding:15px 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    align-items: center;
+    gap: 10px;
+    animation: slideIn 0.4s ease;
+}
+
+.success .icon{
+    font-size: 20px;
+    line-height: 1;
+}
+
+.closeSuccess{
+    float: right;
+    color: #0b7a37;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: -2px;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 500;
+}
+
+@keyframes slideIn{
+    from{
+        transform: translateY(-15px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* SeetAlert Button */
+.swalDel{
+    color: #fff;
+    background: rgb(112 102 224 / 50%);
+    box-sizing: border-box;
+    font-size: .9rem;
+}
+
+
+/* END OF ERROR */

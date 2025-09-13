@@ -1,0 +1,21 @@
+RewriteEngine On
+
+# Converting the url users/readPost.php?postid=5 to users/readPost/5/post-title
+RewriteRule ^users/readPost-([0-9]+)-([a-zA-Z0-9\-]+)-$ users/readPost.php?postid=$1 [L]
+
+# Converting the url users/quickView.php?productid=5 to users/quickView/5/product-title
+RewriteRule ^users/quickView-([0-9]+)-([a-zA-Z0-9\-''"".,,-_*]+)-$ users/quickView.php?productid=$1&title=$2 [NC,L,QSA]
+
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+#Remove .php extention
+RewriteRule ^(.*)$ $1.php [NC,L]
+# -2nd-Way--- Remove .html extention
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+#Remove index.php dices
+RewriteRule ^/$ dashboard.php [NC,L]
+
+
