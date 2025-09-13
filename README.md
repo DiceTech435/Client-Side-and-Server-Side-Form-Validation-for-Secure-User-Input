@@ -1,0 +1,1 @@
+This project highlights the implementation of robust form validation techniques to ensure data integrity and security. It combines client-side validation (JavaScript) for instant feedback and server-side validation (PHP/Laravel) to prevent malicious inputs. The system ensures user-friendly error messages, required field check
